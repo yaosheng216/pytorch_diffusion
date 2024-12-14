@@ -1,0 +1,6 @@
+torch
+numpy
+tqdm
+transformers
+lightning
+pillow==9.5.0
