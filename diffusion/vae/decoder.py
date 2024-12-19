@@ -10,7 +10,7 @@ class VAE_AttentionBlock(nn.Module):
         self.groupnorm = nn.GroupNorm(32, channels)
         self.attention = SelfAttention(1, channels)
 
-    def forward(self, x:torch.Tensor) -> torch.Tensor:
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         # x: (Batch_size, features, height, width)
         residue = x
         n, c, h, w = x.shape
